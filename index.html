@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="navbar">
+    <span class="navbar__logo">Gaurav Mehra</span>
+    <ul class="navbar__links">
+      <li class="link"><a href="#">Home</a></li>
+      <li class="link"><a href="#about-section">About Me</a></li>
+      <li class="link"><a href="#portfolio-section">Portfolio</a></li>
+      <li class="link"><a href="#resume-section">Resume</a></li>
+      <li class="link"><a href="#contact-section">Contact</a></li>
+    </ul>
+    <div class="dropdown" id="hamburger">
+      <button id="menu-icon" onclick="handleDropdownClicked(event)">
+        <span id="icon" class="material-symbols-outlined"> menu</span>
+      </button>
+      <div class="menu">
+        <a href="#">
+          <button>
+            <span class="material-symbols-outlined">
+              home
+            </span>
+            <span>Home</span>
+          </button>
+        </a>
+
+        <a href="#about-section">
+          <button>
+            <span class="material-symbols-outlined">description</span>
+            About
+          </button>
+        </a>
+
+   
+
+        <a href="#resume-section">
+          <button>
+            <span class="material-symbols-outlined">
+              summarize
+            </span>
+            Resume
+          </button>
+        </a>
+
+        <a href="#contact-section">
+          <button>
+            <span class="material-symbols-outlined">
+              contact_page
+            </span>
+            Contact
+          </button>
+        </a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <section id="about-section" class="about">
+
+
+    <section class="about__description">
+      <p class="about--heading">About Me</p>
+      <hr class="about--hr" />
+      <p class="about--para">
+        I'm a Fullstack developer. I have a strong skillset in all aspects of web designing , but
+        my major focus is on designing front end web applications. I also
+        have skills in other fields like construction and composing music.
+      </p>
+      <p class="about--para">
+      I am a proactive problem solver with excellent communication skills and  a dedication to teamwork. <br>
+      I thrice in fact paced environments and have a strong commitment to continuous learning and professional development
+      </p>
+      <div class="about__technologies">
+        <p>Languages and Programs:</p>
+        <div class="about__logos__container">
+          <p class="about-logos">HTML</p>
+          <p class="about-logos">CSS</p>
+          <p class="about-logos">JS</p>
+          <p class="about-logos">React Js</p>
+          <p class="about-logos">Node</p>
+          <p class="about-logos">MongoDB</p>
+          <p class="about-logos">GitHub,netlify,Vercel</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  <div class="title--container title--container-portfolio">
+    <main id="portfolio-section">
+      <h1 class="title">My Projects</h1>
+      <hr class="title--hr--one" />
+    </main>
+    <div class="images-container">
+      <ul class="image-gallery">
+        <li>
+          <a href="https://gauravmehra13.github.io/css/assignment5/HID.html" target="_blank">
+            <img class="image-one" src="./images/Portfolio/css.png" alt="" />
+            <div class="overlay"><span>CSS Animations</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="https://gauravmehra13.github.io/projects/ToDoApp/index.html" target="_blank">
+            <img class="image-two" src="./images/Portfolio/todo.png" alt="" />
+            <div class="overlay"><span>Todo App JS</span></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/gauravmehra13/ChatApp" target="_blank">
+            <img class="image-three" src="./images/Portfolio/chat.png" alt="" />
+            <div class="overlay"><span>Chat App</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="https://gauravmehra13.github.io/projects/DigitalClock/digclock1.html" target="_blank">
+            <img class="image-four" src="./images/Portfolio/4-Digital_Clock.png" alt="" />
+            <div class="overlay"><span>Digital CLock</span></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://glistening-marzipan-21472d.netlify.app" target="_blank">
+            <img clss="image-five" src="./images/Portfolio/blog.png" alt="" />
+            <div class="overlay"><span>React Blog App</span></div>
+          </a>
+        </li>
+
+    </div>
+  </div>
+
+  <div class="title--container">
+    <main id="resume-section">
+      <h1 class="title">Resume</h1>
+      <hr class="title--hr--two" />
+    </main>
+  </div>
+
+  <section class="resume">
+    <div class="experiences">
+      <div class="work__experiences__container">
+        <p>Work Experience</p>
+        <hr />
+        <div class="work__experiences">
+          <div class="work-details">
+            <p class="work--brief">Site Engineer - FULL TIME</p>
+            <p class="work--company">Doon Infrastructure</p>
+            <span class="year year--one"> 01/2021 - 08/2022 </span>
+            <p class="work--company">Was involved in the construnction of a 175m RCC prestressed <br>
+            bridge at the Ban Ganga River in Haridwar.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="education__container">
+        <p>Education</p>
+        <hr />
+        <div class="education">
+          <span class="year year--two"> 2016-2020 </span>
+         
+          <div class="education--details">
+            <p class="education--college">DIT University</p>
+            <p class="education--course">
+              Bachelor in Civil Engineering
+  
+            </p>
+            <p class="education--brief">
+              2016 - 2020, CGPA - 7.3 </p>
+            <pre>
+
+<h3>ALL INDIA SENIOR SCHOOL CERTIFICATE EXAMINATION
+  GRACE ACADEMY</h3>
+2016, BOARD : Central Board Of Secondary
+Education (CBSE)
+
+<i>PERCENTAGE - 74 </i>
+<hr>
+<h1>TRAINING AND PROJECTS</h1>
+
+<h3>INDUSTRIAL TRAINING:</h3>
+<h4>PUBLIC WORKS DEPARTMENT (PWD), DEHRADUN</h4>
+<p>
+  * 6 weeks internships at PWD, Dehradun
+Learned about fixing of pavements and watched over the widening of roads in Doon Vihar
+
+</p>
+<h5>Basics Of Civil Engineering in Construction
+  Online Course
+  2020</h5>
+  <h4>PrepBytes</h4>
+<p>Fullstack MERN web development course</p>
+<hr>
+<h3>FINAL YEAR PROJECT</h3>
+<h5>DIT UNIVERSITY ,2019,
+  Self cleaning concrete using titanium dioxide</h5>
+<h5>Doon Infrastructure
+01/2021 - 08/2022, Dehradun Construction Of RCC prestressed bridge of 175m over Ban Ganga River at Bhowawali Ghat, Haridwar</h5>
+
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/gaurav-mehra-95230a1a5/" target="_blank"><img class="social-logos" src="./images/linkedin.png" alt="LinkedIn" title="LinkedIn"></a>
+      <a href="https://github.com/gauravmehra13 target="_blank"><img class="social-logos" src="./images/github.png" alt="GitHub" title="GitHub"></a>
+    </div>
+  </section>
+
+  <div class="title--container">
+
+  </div>
+
+
+
+  <div class="title--container">
+    <main id="contact-section">
+      <h1 class="title">Contact Me</h1>
+      <hr class="title--hr--four" />
+    </main>
+  </div>
+
+  <div class="contact__container">
+    <div class="connect">
+      <p class="connect--title">Let's connect</p>
+  
+      <div class="connect__container">
+        <p class="connect--options">
+          <img src="./images/email.png" alt="Email" />
+          <span><a style="color: rgb(142, 116, 112);" href="mailto:gauravmehra2470@gmail.in">gauravmehra2470@gmail.com</a></span>
+        </p>
+        <p class="connect--options">
+          <img src="./images/phone.png" alt="Phone" />
+          <span>+91-9557915693</span>
+        </p>
+        <p class="connect--options">
+          <img src="./images/marker.png" alt="Location" />
+          <span>Dehradun-248001,Uttarakhand, India</span>
+        </p>
+      </div>
+    </div>
+    <div class="contact__form__box">
+      <div>
+        <p class="form-title">Send a message</p>
+        <form method="POST" action="https://formspree.io/f/xdojqdrd">
+          <label for="name" required>Name <span class="required">*</span></label>
+          <input type="text" name="name" id="name" />
+          <label for="phone" required>Phone number <span class="required">*</span></label>
+          <input type="text" name="phone" id="phone" />
+          <label for="email" required>Email address <span class="required">*</span></label>
+          <input type="text" name="email" id="email" />
+          <label for="message" required>Message <span class="required">*</span></label>
+          <textarea name="message" id="message" placeholder="Your message here.."></textarea>
+          <br />
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img class="arrow" src="./images/icons8-up-arrow-48.png" alt="" />
+  </button>
+  <footer class="footer">
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
